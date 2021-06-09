@@ -1,0 +1,92 @@
+hr.aporte {
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+div.aporteLeft {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    overflow: auto;
+    float: left;
+}
+
+div.aporteRight {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    overflow: auto;
+    float: right;
+}
+div.btn {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    overflow: auto;
+}
+
+div.aporteLeft_VerAporte {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    overflow: auto;
+    float: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+div.aporteRight_VerAporte {
+    margin: auto;
+    width: 50%;
+    overflow: auto;
+    float: right;
+
+}
+
+div.textoAporte{
+    font-size:20px;
+    overflow: auto;
+    padding-left: 60px;
+    text-align: left;
+    
+}
+
+div.center_VerAporte {
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+    overflow: auto;
+}
+
+div.cardVerAporte{
+    padding-left: 135px;
+    width:500px;
+    height:500;
+}
+
+img.aporte{   
+    width:400px;
+    
+}
+
+button.aporte{   
+    
+    background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 200px;
+}
+
+div.card_border{
+    width: 500px;
+    height: 1000px;
+    border-style: solid;
+    border-width: 1px;
+    
+}

@@ -1,0 +1,99 @@
+#fondoVerEspecies {
+    background-image: url("/src/images/verAportes.jpg");
+    padding: 100px 100px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#fondoVerEspecies:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#fondoVerEspecies h1 {
+    font-family: "Candara";
+    font-weight: bold;
+	font-size: 100px;
+	color: #fff;
+	position: relative
+}
+
+img.verEspecie{   
+    width:450px;
+    height:350px;
+}
+
+img.verEspecieG{   
+    width:650;
+    height:550px;
+}
+hr.verEspecie {
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 1000px;
+}
+
+div.verEspecieLeft {
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    overflow: auto;
+    float: left;
+    display: block;
+    padding-left: 150px;
+  
+  
+}
+
+div.verEspecieRight {
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    overflow: auto;
+    float: right;
+    display: block;
+    padding-right: 150px;
+
+}
+
+h4.verEspecie {
+    padding: 10px;
+    font-family: "Candara";
+    font-weight: bold;
+    text-align: left;
+    padding-left: 320px;
+  }
+
+h5.verEspecie {
+    padding: 10px;
+    padding-left: 320px;
+    padding-right: 250px;
+    text-align: left;
+    font-family: "Candara";
+  
+}  
+
+h4.verEspecieCientifico {
+    padding: 10px;
+    font-family: "Candara";
+    font-weight: bold;
+    text-align: left;
+  
+    padding-left: 480px;
+  }
+
+h5.verEspecieCientifico {
+    padding: 10px;
+    padding-left: 480px;
+    padding-right: 250px;
+    text-align: left;
+    font-family: "Candara";
+ 
+}  

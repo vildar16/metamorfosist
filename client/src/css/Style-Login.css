@@ -1,0 +1,38 @@
+#fondoLogin {
+    background-image: url("/src/images/login.jpg");
+    padding: 80px 100px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#fondoLogin:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#fondoLogin h1 {
+    font-family: "Candara";
+    font-weight: bold;
+	font-size: 100px;
+	color: #fff;
+	position: relative
+}
+
+.auth__main {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    height: 50vh;
+    width: 100wh;
+    
+}

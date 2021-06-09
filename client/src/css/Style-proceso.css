@@ -1,0 +1,70 @@
+img.izquierda {
+    float: left;
+    width: 570px;
+    height: 250px;
+  }
+
+p.centrado{
+    text-align: center;;
+  }
+
+div.center {
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+    overflow: auto;
+  }
+
+  
+h1.proceso {
+    padding: 20px;
+    font-family: "Candara";
+    font-weight: bold;
+	  font-size: 50px;
+}
+
+h4.titulo {
+  padding: 10px;
+  font-family: "Candara";
+  font-weight: bold;
+  text-align: left;
+}
+
+
+h3.proceso {
+    padding: 10px;
+    padding-left: 52%;
+    text-align: left;
+    font-family: "Candara";
+    font-weight: bold;
+}
+
+h3.cuerpo {
+  padding: 10px;
+  text-align: left;
+  font-family: "Candara";
+  font-weight: bold;
+}
+
+h6.proceso {
+    padding: 10px;
+    padding-left: 52%;
+    text-align: left;
+    font-family: "Candara";
+    font-weight: bold;
+}
+
+h6.cuerpo {
+  padding: 10px;
+  text-align: left;
+  font-family: "Candara";
+}
+
+/*
+h6.cuerpo {
+  padding: 10px;
+  text-align: left;
+  font-family: "Candara";
+  border: 3px solid green;
+}
+*/

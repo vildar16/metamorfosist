@@ -1,0 +1,44 @@
+#fondoDato {
+    background-image: url("/src/images/dato_curioso.jpg");
+    padding: 80px 100px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#fondoDato:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#fondoDato h1 {
+    font-family: "Candara";
+    font-weight: bold;
+	font-size: 100px;
+	color: #fff;
+	position: relative
+}
+
+div.datoCurioso{
+    font-family: "Candara";
+    font-weight: bold;
+	font-size: 100px;
+	color: #fff;
+    position: relative;
+}
+
+div.centerDatoCurioso{
+    margin: auto;
+    width: 70%;
+    padding: 50px;
+    overflow: auto;
+}
+
+  

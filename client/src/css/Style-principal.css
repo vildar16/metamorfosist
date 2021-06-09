@@ -1,0 +1,59 @@
+#fondo {
+    background-image: url("/src/images/portada_principal.jpg");
+    padding: 165px 100px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#fondo:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#fondo h1 {
+    font-family: "Candara";
+    font-weight: bold;
+	font-size: 100px;
+	color: #fff;
+	position: relative
+}
+
+#footerBottom {
+    padding: 30px 100px;
+    background: rgba(50,50,50);
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#footerAbsolute {
+    padding: 30px 100px;
+    background: rgba(50,50,50);
+    position: Absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+hr {
+    width: 50%;
+}
+
+#datoCurioso {
+    padding: 30px 100px;
+    position: absolute;
+    width: 100%;
+}
