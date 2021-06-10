@@ -8,7 +8,7 @@ class principal extends React.Component{
     }
 
     async componentDidMount(){
-        const dato = await axios.get('http://localhost:4000/api/facts/getRandomFact')
+        const dato = await axios.get('/api/facts/getRandomFact')
       
         this.setState({datoCurioso: dato.data.fact})
 

@@ -15,7 +15,7 @@ class catalogo_oruga extends React.Component {
         this.getOrugas()
     }
     getOrugas = async () => {
-        const orugas = await axios.get("http://localhost:4000/api/species/getCaterpillars/")
+        const orugas = await axios.get("/api/species/getCaterpillars/")
         console.log(orugas.data.result)
         this.setState({orugas: orugas.data.result})
 
@@ -26,7 +26,7 @@ class catalogo_oruga extends React.Component {
         if(this.state.qword===''){
             this.getOrugas()
         }else{
-        const oru = await axios.get("http://localhost:4000/api/species/searchOruga/"+this.state.qword)
+        const oru = await axios.get("/api/species/searchOruga/"+this.state.qword)
         this.setState({orugas: oru.data})}
 
     }

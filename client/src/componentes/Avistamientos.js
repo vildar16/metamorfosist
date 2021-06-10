@@ -48,7 +48,7 @@ class Avistamientos extends React.Component{
     
     getVal = async(cod)=>{
         try{
-            return await axios.get('http://localhost:4000/api/dm/getByCode/' + cod);
+            return await axios.get('/api/dm/getByCode/' + cod);
         } catch(err){
             console.log("Surgio el error " + err);
         }

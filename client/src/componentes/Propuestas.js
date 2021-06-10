@@ -14,14 +14,14 @@ class propuestas extends React.Component {
     }
 
     getAporte = async () => {
-        const ap = await axios.get("http://localhost:4000/api/species/getAllContributions/")
+        const ap = await axios.get("/api/species/getAllContributions/")
         this.setState({ aportes: ap.data.result })
         console.log(ap.data.result)
 
     }
 
     handleAceptar = async (id) => {
-        await axios.put("http://localhost:4000/api/species/accept/"+id)
+        await axios.put("/api/species/accept/"+id)
         this.getAporte()
     }
 

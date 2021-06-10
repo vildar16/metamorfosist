@@ -17,7 +17,7 @@ class BloquearUsuario extends React.Component {
 
 
     componentDidMount(){
-        axios.get('http://localhost:4000/api/users/findAll/')
+        axios.get('/api/users/findAll/')
             .then(response=> {  
                 this.setState({usuarios: response.data.all})
             })
@@ -31,7 +31,7 @@ class BloquearUsuario extends React.Component {
         var selectedIndex = event.target.options.selectedIndex;
         var customAtrribute= event.target.options[selectedIndex].getAttribute('si');
         console.log(this.state.customAtrribute)
-        axios.get('http://localhost:4000/api/users/findByEmail/'+customAtrribute)
+        axios.get('/api/users/findByEmail/'+customAtrribute)
         .then(response=> {  
             this.setState({usuarioSeleccionado: response.data})
         })
@@ -47,7 +47,7 @@ class BloquearUsuario extends React.Component {
         console.log(this.state.usuarioSeleccionado._id)
         try {
             console.log(this.state.especieSeleccionada)
-            await axios.put('http://localhost:4000/api/users/blockUser/'+this.state.usuarioSeleccionado._id)
+            await axios.put('/api/users/blockUser/'+this.state.usuarioSeleccionado._id)
 
 
              this.setState({ok: true, errors: {}, msg: '', created: true})

@@ -31,14 +31,14 @@ class Editar_especie extends React.Component {
 
       
     componentDidMount(){
-        axios.get('http://localhost:4000/api/species/getButterflies')
+        axios.get('/api/species/getButterflies')
             .then(response=> {  
                 this.setState({mariposas: response.data.result})
             })
             .catch(error => {
                 this.handleSubmit(error)
             })
-        axios.get('http://localhost:4000/api/species/getCaterpillars')
+        axios.get('/api/species/getCaterpillars')
             .then(response=> {  
                 this.setState({orugas: response.data.result})
             })
@@ -62,7 +62,7 @@ class Editar_especie extends React.Component {
         var selectedIndex = event.target.options.selectedIndex;
         var customAtrribute= event.target.options[selectedIndex].getAttribute('si');
         this.setState({especieSeleccionada: customAtrribute})
-        axios.get('http://localhost:4000/api/species/getSpeciesById/'+customAtrribute)
+        axios.get('/api/species/getSpeciesById/'+customAtrribute)
         .then(response=> {  
             console.log(response.data.result)
             this.setState({especie: response.data.result})
@@ -102,7 +102,7 @@ class Editar_especie extends React.Component {
         }
         try {
             console.log(this.state.especieSeleccionada)
-            await axios.put('http://localhost:4000/api/species/update/'+this.state.especieSeleccionada, {
+            await axios.put('/api/species/update/'+this.state.especieSeleccionada, {
                 name: this.state.name,
                 scientificName: this.state.scientificName,
                 family: this.state.family,

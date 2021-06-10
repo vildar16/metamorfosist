@@ -11,13 +11,13 @@ class EliminarDatoCurioso extends React.Component{
     }
 
     getFacts = async () =>{
-        const all =  await axios.get("http://localhost:4000/api/facts/getAll");
+        const all =  await axios.get("/api/facts/getAll");
         console.log(all.data.allFacts)
         this.setState({facts:all.data.allFacts})
     }
 
     handleDelete = async ( id) => {
-        await axios.delete("http://localhost:4000/api/facts/delete/"+id)
+        await axios.delete("/api/facts/delete/"+id)
         this.getFacts()
     }
     render(){

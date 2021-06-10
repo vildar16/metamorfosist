@@ -14,7 +14,7 @@ class catalogoMariposas extends React.Component {
     }
 
     getMariposas = async () => {
-        const mariposas = await axios.get("http://localhost:4000/api/species/getButterflies/")
+        const mariposas = await axios.get("/api/species/getButterflies/")
         console.log(mariposas.data.result)
         this.setState({mariposas: mariposas.data.result})
 
@@ -26,7 +26,7 @@ class catalogoMariposas extends React.Component {
         if(this.state.qword===''){
             this.getMariposas()
         }else{
-        const marip = await axios.get("http://localhost:4000/api/species/searchMariposa/"+this.state.qword)
+        const marip = await axios.get("/api/species/searchMariposa/"+this.state.qword)
         this.setState({mariposas: marip.data})}
 
     }

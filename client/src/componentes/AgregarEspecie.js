@@ -49,7 +49,7 @@ class agregarEspecie extends React.Component{
             fotoUrl = fotoRes.data.secure_url;
         }
         try {
-            await axios.post('http://localhost:4000/api/species/addSpecies', {
+            await axios.post('/api/species/addSpecies', {
                 name: this.state.name,
                 scientificName: this.state.scientificName,
                 family: this.state.family,

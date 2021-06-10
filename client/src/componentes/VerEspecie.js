@@ -11,14 +11,14 @@ class Ver_especie extends React.Component{
     }
 
     async componentDidMount(){
-        const esp = await axios.get("http://localhost:4000/api/species/getSpeciesByID/"+this.props.match.params.id)
+        const esp = await axios.get("/api/species/getSpeciesByID/"+this.props.match.params.id)
         
         this.setState({especie: esp.data.result})
         if(this.state.especie.stage==="Mariposa"){
-            const mt = await axios.post("http://localhost:4000/api/species/getMatchCaterpillar/", {scientificName: this.state.especie.scientificName})
+            const mt = await axios.post("/api/species/getMatchCaterpillar/", {scientificName: this.state.especie.scientificName})
             this.setState({match: mt.data.match})
         }else{
-            const mt2 = await axios.post("http://localhost:4000/api/species/getMatchButterfly/", {scientificName: this.state.especie.scientificName})
+            const mt2 = await axios.post("/api/species/getMatchButterfly/", {scientificName: this.state.especie.scientificName})
             this.setState({match: mt2.data.match})
             if(this.state.match==={}){
                 this.setState({match: {stage: "Sin informacion"}})

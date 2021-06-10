@@ -51,7 +51,7 @@ class proceso_metamorfosis extends React.Component{
         }
         
         try {
-            await axios.post('http://localhost:4000/api/species/addSpecies', {
+            await axios.post('/api/species/addSpecies', {
                 name: this.state.name,
                 scientificName: this.state.scientificName,
                 family: this.state.family,

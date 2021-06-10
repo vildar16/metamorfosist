@@ -21,7 +21,7 @@ class Agregar_dato_curioso extends React.Component{
 
     onSubmit = async() =>{
        
-        await axios.post("http://localhost:4000/api/facts/addFact", {fact: this.state.datoCurioso})
+        await axios.post("/api/facts/addFact", {fact: this.state.datoCurioso})
         this.setState({ok: true, msg: "Creado correctamente.", datoCurioso: ''})
     }
     render(){

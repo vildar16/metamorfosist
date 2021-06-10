@@ -38,11 +38,11 @@ export const RegisterForm = () => {
             
             try {
                 if (logged&&isAdmin) {
-                     res = await axios.post('http://localhost:4000/api/users/register',
+                     res = await axios.post('/api/users/register',
                     {...formValues,
                     isAdmin: true})
                 }else{
-                     res = await axios.post('http://localhost:4000/api/users/register',
+                     res = await axios.post('/api/users/register',
                     formValues
                 )}
                 console.log(res)
